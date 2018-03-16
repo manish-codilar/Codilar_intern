@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <referenceContainer name="page.main.title">
+        <block
+                template="customer_attribute.phtml"
+                class="Codilar\CustomerAttribute\Block\CustomerAccount"
+                name="codilar_customer_account_block_main"
+                cacheable="false"
+        />
+    </referenceContainer>
+</page>
