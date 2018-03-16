@@ -2,7 +2,10 @@
 return array (
   'modules' => 
   array (
+<<<<<<< HEAD
     'Codilar_ProductAttribute' => 1,
+=======
+>>>>>>> 6fc339f0657730f44506d51430d1f329e189d8c8
     'Magento_Store' => 1,
     'Magento_Directory' => 1,
     'Magento_AdvancedPricingImportExport' => 1,
