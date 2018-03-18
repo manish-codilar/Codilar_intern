@@ -11,6 +11,5 @@
             <argument name="mainTable" xsi:type="string">codilar_seller_product</argument>
             <argument name="resourceModel" xsi:type="string">Codilar\Seller\Model\ResourceModel\Product</argument>
         </arguments>
-
     </virtualType>
 </config>
