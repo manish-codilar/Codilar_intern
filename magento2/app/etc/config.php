@@ -3,6 +3,7 @@ return array (
   'modules' => 
   array (
     'Codilar_CustomerAttribute' => 1,
+    'Codilar_ProductAttribute' => 1,
     'Codilar_Seller' => 1,
     'Magento_Store' => 1,
     'Magento_Directory' => 1,
