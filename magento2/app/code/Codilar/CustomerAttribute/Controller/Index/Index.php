@@ -1,6 +1,6 @@
 <?php
 
-namespace Codilar\HelloWorld\Controller\Index;
+namespace Codilar\CustomerAttribute\Controller\Index;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
@@ -21,6 +21,8 @@ class Index extends Action
     
     public function execute()
     {
-        return $this->resultPageFactory->create();  
+       return $this->resultPageFactory->create();  
+        //echo "Hello World"; die();
+
     }
 }
