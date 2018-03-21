@@ -18,7 +18,7 @@ class CustomerAttribute extends Template
     }
     public function getName()
     {
-        return "Create Account";
+        return "Create Accounts";
     }
 
 }
