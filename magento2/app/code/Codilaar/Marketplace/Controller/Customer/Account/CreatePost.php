@@ -1,8 +1,5 @@
 <?php
-/**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
+
 namespace Codilaar\Marketplace\Controller\Customer\Account;
 
 use Magento\Customer\Model\Account\Redirect as AccountRedirect;
@@ -278,7 +275,7 @@ class CreatePost extends \Magento\Customer\Controller\Account\CreatePost
             else {
                 $this->session->setCustomerDataAsLoggedIn($customer);
                 $this->messageManager->addSuccess($this->getSuccessMessage());
-                $requestedRedirect = $this->accountRedirect->getRedirectCookie();
+//                $requestedRedirect = $this->accountRedirect->getRedirectCookie();
                 if (!$this->scopeConfig->getValue('customer/startup/redirect_dashboard') && $requestedRedirect) {
                     $resultRedirect->setUrl($this->_redirect->success($requestedRedirect));
                     $this->accountRedirect->clearRedirectCookie();
@@ -286,11 +283,11 @@ class CreatePost extends \Magento\Customer\Controller\Account\CreatePost
                 }
                 $resultRedirect = $this->accountRedirect->getRedirect();
             }
-            if ($this->getCookieManager()->getCookie('mage-cache-sessid')) {
-                $metadata = $this->getCookieMetadataFactory()->createCookieMetadata();
-                $metadata->setPath('/');
-                $this->getCookieManager()->deleteCookie('mage-cache-sessid', $metadata);
-            }
+//            if ($this->getCookieManager()->getCookie('mage-cache-sessid')) {
+//                $metadata = $this->getCookieMetadataFactory()->createCookieMetadata();
+//                $metadata->setPath('/');
+//                $this->getCookieManager()->deleteCookie('mage-cache-sessid', $metadata);
+//            }
 
             return $resultRedirect;
         } catch (StateException $e) {

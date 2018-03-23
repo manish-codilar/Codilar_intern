@@ -92,7 +92,7 @@ class Vendor extends \Magento\Framework\App\Helper\AbstractHelper
      */
     public function isVendorInfoAllowedInSidebar()
     {
-        if($this->isAVendostylesrAndAccountApproved()){
+        if($this->isAVendorAndAccountApproved()){
             return true;
         }
         return false;
@@ -121,5 +121,10 @@ class Vendor extends \Magento\Framework\App\Helper\AbstractHelper
     public function getVendorProfileUrl()
     {
         return $this->urlBuilder->getUrl('marketplace/vendor/profile');
+    }
+
+    public function getVendorAddProductUrl()
+    {
+        return $this->urlBuilder->getUrl('hello/index/index');
     }
 }
