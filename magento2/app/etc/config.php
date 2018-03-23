@@ -2,7 +2,7 @@
 return array (
   'modules' => 
   array (
-    'Codilaar_HelloWorld' => 0,
+    'Codilaar_HelloWorld' => 1,
     'Magento_Store' => 1,
     'Codilar_CustomerAttribute' => 0,
     'Codilar_ProductAttribute' => 0,
@@ -123,6 +123,7 @@ return array (
     'Magento_CatalogWidget' => 1,
     'Dotdigitalgroup_Email' => 1,
     'Magento_WishlistAnalytics' => 1,
+    'Mageplaza_HelloWorld' => 1,
     'Shopial_Facebook' => 1,
     'Temando_Shipping' => 1,
   ),

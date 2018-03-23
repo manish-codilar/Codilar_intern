@@ -5,10 +5,12 @@
         <css src="Codilaar_HelloWorld::css/css.css" />
 
     </head>
-	 <body> 
-	<referenceContainer name="content"> 
-	<block class="Codilaar\HelloWorld\Block\Index" name="index_index" template="index/form.phtml">
-	</block>
-	</referenceContainer> 
-	</body>
+    <body>
+
+        <referenceContainer name="content">
+            <block class="Codilaar\HelloWorld\Block\HelloWorld"
+                   name="seller.adding.products"
+                   template="Codilaar_HelloWorld::hello_world.phtml"/>
+        </referenceContainer>
+    </body>
 </page>

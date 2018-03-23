@@ -92,7 +92,7 @@ class Vendor extends \Magento\Framework\App\Helper\AbstractHelper
      */
     public function isVendorInfoAllowedInSidebar()
     {
-        if($this->isAVendorAndAccountApproved()){
+        if($this->isAVendostylesrAndAccountApproved()){
             return true;
         }
         return false;
